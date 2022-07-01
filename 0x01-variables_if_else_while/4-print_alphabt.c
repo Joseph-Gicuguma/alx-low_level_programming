@@ -2,19 +2,18 @@
 /**
  * main - entry point
  *
- * Return: Always 0 (Success)
+ * Return: always 0 (success)
  */
 int main(void)
 {
-char lower_case;
-for (lower_case = 'a'; lower_case <= 'z'; lower_case++)
-putchar(lower_case);
+char alphabets;
+for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
 {
-if (lower_case == 'q')
+if (alphabets == 'q')
 continue;
-else if (lower_case == 'e')
+else if (alphabets == 'e')
 continue;
-putchar(lower_case);
+putchar(alphabets);
 }
 putchar('\n');
 return (0);
