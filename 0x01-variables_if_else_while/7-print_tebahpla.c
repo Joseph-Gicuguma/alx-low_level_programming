@@ -1,15 +1,15 @@
 #include <stdio.h>
-#include <ctype.h>
-main()
+/**
+ * main - entry block
+ *
+ * Return: 0
+ **/
+int main(void)
 {
-    char alphabets;
-for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
- 
-  if (islower(alphabets))
-     putchar(toupper(alphabets)); //change to uppercase
-     putchar('\n');
-  else
-     putchar(tolower(alphabets)); //else change to lowercase
-     putchar('\n');
-return (0);
+	char c;
+
+	for (c = 'z'; c >= 'a'; c--)
+		putchar(c);
+	putchar('\n');
+	return (0);
 }
