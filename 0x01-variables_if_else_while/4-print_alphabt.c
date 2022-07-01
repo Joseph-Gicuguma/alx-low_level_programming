@@ -10,11 +10,11 @@ char lower_case;
 for (lower_case = 'a'; lower_case <= 'z'; lower_case++)
 putchar(lower_case);
 {
-if (alphabets == 'q')
+if (lower_case == 'q')
 continue;
-else if (alphabets == 'e')
+else if (lower_case == 'e')
 continue;
-putchar(alphabets);
+putchar(lower_case);
 }
 putchar('\n');
 return (0);
