@@ -1,5 +1,3 @@
-s (16 sloc)  178 Bytes
-
 #include <stdio.h>
 /**
  * main - Entry point
@@ -9,7 +7,7 @@ s (16 sloc)  178 Bytes
 int main(void)
 {
 int i;
-for (i = 48; i <= 57; i++)
+for (i = 0; i <= 10; i++)
 {
 putchar(i);
 }
