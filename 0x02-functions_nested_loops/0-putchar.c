@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 
 int main() {
    /* my first program in C */
