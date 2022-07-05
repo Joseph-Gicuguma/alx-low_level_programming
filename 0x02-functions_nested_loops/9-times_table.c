@@ -1,39 +1,38 @@
 #include "main.h"
 /**
- * times_table -  a function that prints the 9 times table, starting with 0
- * rone = row, cone = column, d = digits of current result
- * Return: times table
- * add extra space past single digit
- */
+* times_table - Times table
+* Return: 0
+*/
 void times_table(void)
 {
-	int rone, cone, d;
+	int i;
+	int j;
+	int k = 9;
 
-	for (rone = 0; rone <= 9; rone++)
+	for (i = 0; i <= k; i++)
 	{
-		_putchar('0');
-		_putchar(',');
-		_putchar(' ');
-		for (cone = 1; cone <= 9; cone++)
+		for (j = 0; j <= k; j++)
 		{
-			d = (rone * cone);
-			if ((d / 10) > 0)
+			if ((i * j) < 10)
 			{
-				_putchar((d / 10) + '0');
+				if (j != 0)
+				{
+					_putchar(' ');
+					_putchar(' ');
+				}
+				_putchar((j * i) + '0');
 			}
-			else
+			else if ((i * j) < 100)
 			{
 				_putchar(' ');
+				_putchar((((j * i) / 10) % 10) + '0');
+				_putchar(((j * i) % 10) + '0');
 			}
-			_putchar((d % 10) + '0');
-
-			if (cone < 9)
+			if (j != k)
 			{
 				_putchar(',');
-				_putchar(' ');
 			}
 		}
 		_putchar('\n');
 	}
-
 }
