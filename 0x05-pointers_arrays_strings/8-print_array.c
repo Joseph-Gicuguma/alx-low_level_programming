@@ -7,7 +7,7 @@
  * @n: This is the lenght of the array
  *
  *
- */
+ * */
 
 void print_array(int *a, int n)
 {
