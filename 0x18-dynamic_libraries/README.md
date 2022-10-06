@@ -1,1 +1,1 @@
-# Dynamic libraries
+# Dynamic libraries by Joseph Gicuguma
